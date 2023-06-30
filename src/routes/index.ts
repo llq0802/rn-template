@@ -12,26 +12,26 @@ const routes: StackNavigationOptions[] = [
   {
     name: 'Tabs',
     component: TabsScreen,
-    options: {
-      headerShown: false,
-      header: () => null,
-      // title: '首页',
-    },
+    // options: {
+    //   headerShown: false,
+    //   header: () => null,
+    //   // title: '首页',
+    // },
   },
   {
     name: 'Login',
     component: Login,
-    options: {
-      headerShown: false,
-      header: () => null,
-    },
+    // options: {
+    //   headerShown: false,
+    //   header: () => null,
+    // },
   },
   {
     name: 'Details',
     component: Details,
-    options: {
-      title: '详情',
-    },
+    // options: {
+    //   title: '详情',
+    // },
   },
 ];
 

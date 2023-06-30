@@ -24,7 +24,12 @@ export default () => {
         <NavigationContainer ref={navigationRef} theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
           <AuthLoadingScreen>
             {() => (
-              <Stack.Navigator initialRouteName={'Tabs'}>
+              <Stack.Navigator
+                initialRouteName={'Tabs'}
+                screenOptions={{
+                  headerShown: false,
+                  header: () => null,
+                }}>
                 {stackPageData.map((props, index) => {
                   return (
                     <Stack.Screen
